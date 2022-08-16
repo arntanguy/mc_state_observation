@@ -244,7 +244,6 @@ void AttitudeObserver::addToLogger(const mc_control::MCController &,
     return sva::PTransformd{m_orientation.transpose(), Eigen::Vector3d::Zero()};
   });
   logger.addLogEntry(category + "_gyroBias", [this]() { return m_gyrobias; });
-});
   if(log_kf_)
   {
     config_.addToLogger(logger, category);
