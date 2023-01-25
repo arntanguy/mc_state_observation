@@ -87,8 +87,6 @@ void AttitudeObserver::reset(const mc_control::MCController & ctl)
 
   uk_.setZero();
 
-  filter_.setStateCovariance(so::Matrix::Identity(STATE_SIZE, STATE_SIZE) * c.stateInitCov);
-
   if(filter_.stateIsSet())
   {
     filter_.setState(xk_, filter_.getCurrentTime());
