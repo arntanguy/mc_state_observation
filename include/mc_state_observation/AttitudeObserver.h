@@ -138,6 +138,7 @@ struct ConfigurationLoader<mc_state_observation::AttitudeObserver::KalmanFilterC
     config("ori_acc_cov", c.orientationAccCov);
     config("lin_acc_cov", c.linearAccCov);
     config("bias_drift_cov", c.biasDriftCov);
+    config("bias_init_cov", c.biasInitCov);
     config("state_cov", c.stateCov);
     config("state_init_cov", c.stateInitCov);
     return c;
@@ -151,6 +152,7 @@ struct ConfigurationLoader<mc_state_observation::AttitudeObserver::KalmanFilterC
     config.add("gyr_cov", c.gyroCovariance);
     config.add("ori_acc_cov", c.orientationAccCov);
     config.add("bias_drift_cov", c.biasDriftCov);
+    config.add("bias_init_cov", c.biasInitCov);
     config.add("lin_acc_cov", c.linearAccCov);
     config.add("state_cov", c.stateCov);
     config.add("state_init_cov", c.stateInitCov);

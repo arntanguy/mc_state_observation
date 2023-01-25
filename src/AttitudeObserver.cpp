@@ -397,6 +397,7 @@ void AttitudeObserver::KalmanFilterConfig::addToGUI(mc_rtc::gui::StateBuilder & 
     make_input_element("orientationAccCov", orientationAccCov),
     make_input_element("linearAccCov", linearAccCov),
     make_input_element("biasDriftCov", biasDriftCov),
+    make_input_element("biasInitCov", biasInitCov),
     make_input_element("stateCov", stateCov),
     make_input_element("stateInitCov", stateInitCov),
     make_rpy_input("offset", offset));
