@@ -16,6 +16,8 @@ endmacro()
 
 add_so_observer(AttitudeObserver)
 
+add_simple_observer(ForceSensorCouplingObserver)
+
 if(WITH_ROS_OBSERVERS)
   add_simple_observer(MocapObserver)
   add_simple_observer(MocapObserverROS)
